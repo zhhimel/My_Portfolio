@@ -1,11 +1,86 @@
-import user_info from "../../data/user_info.js";
 import { FaLandmark } from "react-icons/fa";
 import { FaBuildingUser } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { PiCertificateFill } from "react-icons/pi";
-import { SiHackerrank, SiIbm } from "react-icons/si";
+import { SiHackerrank } from "react-icons/si";
 
 function EducationAndExperience() {
+  // Updated user_info data based on your CV
+  const user_info = {
+    education: [
+      {
+        duration: "2021 - 2025",
+        school: "Chittagong University of Engineering and Technology",
+        degree: "Bachelor of Science in Computer Science & Engineering (CGPA: 3.27/4.0)",
+        image: "/cuet-logo.webp" // Replace with actual image path
+      },
+      {
+        duration: "2019",
+        school: "Rangpur Govt. College",
+        degree: "Higher Secondary School Certificate in Science (GPA: 5/5)",
+        image: "/college.webp" // Replace with actual image path
+      },
+      {
+        duration: "2017",
+        school: "Rangpur Zilla School",
+        degree: "Secondary School Certificate in Science (GPA: 5/5)",
+        image: "/school.png" // Replace with actual image path
+      }
+    ],
+
+    certificates: [
+      {
+        title: "Supervised Machine Learning: Regression and Classification",
+        description: "Coursera - Machine Learning Specialization",
+        link: "https://coursera.org/share/08ee87e9c0ff3540749772a21aff44d4",
+        icon: "google"
+      },
+      {
+        title: "SQL (Basic) Certificate",
+        description: "HackerRank",
+        link: "https://www.hackerrank.com/certificates/3edf18ffb96d",
+        icon: "hackerrank"
+      }
+    ],
+
+    experience: [
+      {
+        duration: "Sep 2025 - Present",
+        company: "M360 ICT",
+        position: "Junior Software Engineer (Backend)",
+        image: "/m360.webp", // Replace with actual image path
+        descriptions: [
+          "Developing and maintaining backend systems for Trabill (trabill.biz), a comprehensive travel agency management software",
+          "Building scalable RESTful APIs and microservices to support booking management, client relations, and financial transactions",
+          "Implementing database optimizations and caching strategies using MySQL and Redis to improve system performance",
+          "Collaborating with cross-functional teams in an Agile environment to deliver high-quality features"
+        ]
+      },
+      {
+        duration: "Dec 2024 - Jan 2025",
+        company: "Dynamic Solution Innovators Ltd.",
+        position: "Industrial Attachment",
+        image: "/dsi_logo_navbar.svg", // Replace with actual image path
+        descriptions: [
+          "Gained hands-on experience with the Software Development Life Cycle (SDLC)",
+          "Explored Java Spring Boot for backend development",
+          "Learned frontend architecture patterns including atomic design and feature-based structures"
+        ]
+      },
+      {
+        duration: "Oct 2023 - Nov 2024",
+        company: "The Tork",
+        position: "Junior Software Engineer (Frontend)",
+        image: "/tork.png", // Replace with actual image path
+        descriptions: [
+          "Built a Learning Management System (LMS) using React and Node.js",
+          "Implemented dynamic content delivery and user authentication",
+          "Achieved a 30% improvement in student engagement through optimized UX design"
+        ]
+      }
+    ]
+  };
+
   return (
     <section id="education-and-experience" className="mt-20 mx-4 lg:mx-20 flex flex-col md:flex-row gap-4 md:gap-2">
       {/* =========== EDUCATION =========== */}
@@ -69,9 +144,7 @@ function EducationAndExperience() {
               {user_info.certificates.map((cert, index) => {
                 return (
                   <div className="hs-carousel-slide relative" key={index}>
-                    {cert.icon === "ibm" ? (
-                      <SiIbm className="text-blue-500 absolute right-5 top-0 text-5xl" />
-                    ) : cert.icon === "google" ? (
+                    {cert.icon === "google" ? (
                       <FcGoogle className="text-blue-500 absolute right-5 top-3 text-3xl" />
                     ) : (
                       <SiHackerrank className="text-green-500 absolute right-5 top-3 text-3xl" />
@@ -202,9 +275,9 @@ function EducationAndExperience() {
                     
                     <ul className="list-disc list-inside text-zinc-800 dark:text-white mt-2">
                       {/* =========== DESCRIPTION LIST =========== */}
-                      {exp.descriptions.map((desc, index) => {
+                      {exp.descriptions.map((desc, descIndex) => {
                         return (
-                          <li className="flex space-x-3" key={index}>
+                          <li className="flex space-x-3" key={descIndex}>
                             <svg
                               className="flex-shrink-0 size-4 mt-0.5 text-red-800 dark:text-red-500"
                               xmlns="http://www.w3.org/2000/svg"
