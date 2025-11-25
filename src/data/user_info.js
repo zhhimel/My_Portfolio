@@ -2,9 +2,10 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Md. Zihadi Haque",
-        description: "I am a passionate programmer with expertise in the MERN stack, Go (Gin, Fiber frameworks), and multiple programming languages like C, C++, Python, and TypeScript. I have hands-on experience developing real-world applications such as CUET-BUS, CUET E-kroy.com, and CUET TSC. I previously worked as a Frontend Developer (Intern) at The Tork. I have strong foundation in DSA, OOP and DBMS. I have good problem- solving skills, a quick-learning attitude, and a high interest in backend technologies, DevOps, and system design, I actively contribute as Chair of the Dev Wing at IEEE Computer Society CUET Chapter.",
+        description: "I am a Backend Software Engineer with 1+ year of professional experience building scalable web applications and RESTful APIs. Currently working at M360 ICT, developing backend systems for Trabill - a comprehensive travel agency management software. I specialize in Node.js (Express.js), Go (Gin framework), and have strong proficiency in multiple programming languages including C, C++, Python, and TypeScript. My technical expertise includes MySQL, PostgreSQL, MongoDB, Redis, Docker, Linux. I have successfully delivered real-world applications such as CUET-BUS, CUET E-kroy.com, and CUET TSC, and previously contributed to a Learning Management System at The Tork. With a solid foundation in Data Structures, Algorithms, Object-Oriented Programming, and Database Management Systems, I have solved 500+ competitive programming problems across platforms like LeetCode and Codeforces. I actively lead as Chair of the Development Wing at IEEE Computer Society CUET Chapter and serve as Assistant General Secretary at CUET Computer Club. My research work on skin lesion classification has been published in the International Conference on Electrical, Computer and Communication Engineering (ECCE), 2025.",
         photo: "../photo.png",
         email: "zh.himel.2002@gmail.com",
+        
     },
 
     // ============ SOCIAL LINKS ============
